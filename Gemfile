@@ -1,7 +1,15 @@
 source "https://rubygems.org"
+group :test do
+  gem 'simplecov', require: false
+end
+
+gem 'minitest-power_assert'
 
 # Specify your gem's dependencies in ipgeobase.gemspec
 gemspec
+gem 'faraday'
+gem 'webmock'
+gem 'rspec'
 
-gem "rake", "~> 12.0"
-gem "rspec", "~> 3.0"
+gem "rake"
+gem "rspec"
